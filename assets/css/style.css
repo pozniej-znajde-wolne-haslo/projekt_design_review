@@ -1,0 +1,435 @@
+@font-face {
+    font-family: TiemposHeadline-Semibold;
+    src: url("../fonts/TiemposHeadline-Semibold.woff");
+}
+
+@font-face {
+    font-family: Graphik-Regular;
+    src: url("../fonts/Graphik-Regular.woff");
+}
+
+@font-face {
+    font-family: Graphik-Medium;
+    src: url("../fonts/Graphik-Medium.ttf");
+}
+
+@font-face {
+    font-family: Theinhardt-Lt;
+    src: url(../fonts/Theinhardt-Lt.woff);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/*  ===== FONTS ===== */
+
+.font_tiempos {
+    font-family: TiemposHeadline-Semibold;
+}
+
+.font_graphik_reg {
+    font-family: Graphik-Regular;
+}
+
+.font_graphik_med {
+    font-family: Graphik-Medium;
+}
+
+.font_theinhardt {
+    font-family: Theinhardt-Lt;
+}
+
+
+/* ===== WIDE SCREEN (1200 - 1440px) ===== */
+
+/* ===== Global Styles ===== */
+h2 {
+    font-size: clamp(4.7rem, 4vw, 6rem);
+    font-weight: 400;
+    margin-bottom: 5rem;
+    color: #27282A;
+}
+
+.width_n_display_sections_main {
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+header {
+    display: flex;
+    width: 90%;
+    margin: 2rem auto 2rem auto;
+    position: relative;
+}
+
+/* === LOGO ===
+    position absolute for a centered position in the header */
+header p {
+    position: absolute;
+    width: 100%;
+    color: #2B2C2E;
+    font-size: clamp(2.5rem, 2vw, 2.8rem);
+    text-shadow: 5px 5px dotted #9fa2a7;
+    text-align: center;
+}
+
+/* === NAVBAR === */
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+header div nav a {
+    text-decoration: none;
+    font-size: clamp(1.8rem, 1.4vw, 2rem);
+    padding-right: 2rem;
+    color: #2B2C2E;
+    text-shadow: 3px 3px dotted #9fa2a7;
+}
+
+/* warum funktionieren die a-tags in der nav und im button auf dem large screen nicht?? */
+header .button {
+    text-decoration: none;
+    color: #3D3E41;
+    font-size: clamp(1.8rem, 1.4vw, 2rem);
+    border: .1rem solid #3D3E41;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: .5rem 5rem .5rem 5rem;
+}
+
+/* hover aufm large screen auch nicht?? */
+.button:hover {
+    background-color: #3D3E41;
+    color: #fff;
+}
+
+/* ===== MAIN ===== */
+/* === HERO === */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: clamp(3.1rem, 2.6vw, 3.7rem);
+    color: #2B2C2E;
+    text-shadow: 3px 3px dotted #9fa2a7;
+    margin: 7rem auto 5rem auto;
+}
+
+.hero img{
+    width: 100%;
+}
+
+
+/* === section FLATRATE PRICE */
+.flatrate_price {
+    margin: 12rem auto 12rem auto;
+}
+
+.flatrate_price p:nth-child(1) {
+    width: 65%;
+    font-size: clamp(1.9rem, 1.5vw, 2.2rem);
+    color: #2B2C2E;
+    text-shadow: 3px 3px dotted #9fa2a7;
+    line-height: 1.5;
+    padding-top: .5rem;
+}
+
+.flatrate_price p:nth-child(2) {
+    width: 20%;
+    margin-left: 5rem;
+    font-size: clamp(1.9rem, 1.5vw, 2.1rem);
+    color: #9FA2A7;
+    text-shadow: 1px 1px dotted #848689;
+}
+
+.flatrate_price p:nth-child(2) span {
+    font-size: clamp(7rem, 5.2vw, 7.5rem);
+    font-weight: 900;
+    color: #2B2C2E;
+    text-shadow: 3px 3px dotted #9fa2a7;
+    display: block;
+}
+
+/* === section DELIVERABLES === */
+.deliverables aside {
+    width: 50%;
+    align-self: center;
+}
+
+.deliverables aside img {
+    width: 100%;
+}
+
+.deliverables article {
+    width: 50%;
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+
+.deliverables article h3 {
+    font-size: clamp(2.1rem, 1.7vw, 2.4rem);
+    color: #2B2C2E;
+    text-shadow: 3px 3px dotted #9fa2a7;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.deliverables article p {
+    font-size: clamp(2rem, 1.5vw, 2.2rem);
+    color: #848689;
+    text-shadow: 2px 2px dotted #3D3E41;
+    line-height: 1.1;
+}
+
+/* === section HOW IT WORKS / WHO WE ARE === */
+.howItWorks_whoWeAre {
+    align-items: center;
+    margin: 10rem auto 10rem auto;
+    background-color: #f1f1f4;
+}
+
+.howItWorks_whoWeAre article {
+    width: 50%;
+    padding-left: 4rem;
+}
+
+.howItWorks_whoWeAre article ol,
+.howItWorks_whoWeAre article p {
+    font-size: clamp(1.8rem, 1.4vw, 2rem);
+    color: #848689;
+    text-shadow: 2px 2px dotted #3D3E41;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.howItWorks_whoWeAre aside {
+    width: 50%;
+}
+
+.howItWorks_whoWeAre aside img {
+    width: 100%;
+}
+
+/* === section CRITIQUE === */
+.critique {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 15rem;
+    border-bottom: 1px ridge #9FA2A7;
+}
+
+.critique h2 {
+    text-align: center;
+}
+
+.critique > p:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 65%;
+    margin: 2rem auto 10rem auto;
+    font-size: clamp(1.8rem, 1.4vw, 2rem);
+    color: #848689;
+    text-shadow: 2px 2px dotted #3D3E41;
+    line-height: 1.5;
+}
+
+.flexcontainer_img_position {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.flexcontainer_img_position img:first-of-type {
+    width: 120%;
+    transform: translateX(-135px);
+}
+
+.flexcontainer_img_position p {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1.8rem, 1.4vw, 2rem);
+    line-height: 1.5;
+    color: #848689;
+    text-shadow: 2px 2px dotted #9FA2A7;
+    margin-left: 13%;
+}
+
+.flexcontainer_img_position p span {
+    margin-bottom: .5rem;
+}
+
+.flexcontainer_img_position img:last-of-type {
+    width: 50%;
+    align-self: flex-end;
+    position: absolute;
+    top: 50%;
+}
+
+
+/*  ===== FOOTER ===== */
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto 2rem auto;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer .flexcontainer_img_n_link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 3rem auto 2rem auto;
+}
+
+footer .flexcontainer_img_n_link img {
+    width: 15%;
+}
+
+footer .flexcontainer_img_n_link p {
+    font-size: clamp(1.8rem, 1.4vw, 2rem);
+    color: #9FA2A7;
+    text-shadow: 1px 1px dotted #848689;
+}
+
+footer .flexcontainer_img_n_link p a {
+    text-decoration: none;
+    color: #3D3E41;
+    text-shadow: 1px 1px dotted #9FA2A7;
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+
+    /* === GLOBAL STYLES === */
+    h2 {
+        font-size: clamp(3.7rem, 4vw, 5rem);
+        margin-bottom: 3.5rem;
+    }
+    
+    /*  === HEADER === */
+    header p {
+        font-size: clamp(1.3rem, 2.3vw, 2.5rem);
+        top: -5px;
+    }
+
+    header div nav a {
+        font-size: clamp(1.6rem, 1.5vw, 1.8rem);
+        padding-right: 1.5rem;
+    }
+
+    /* === HERO === */
+    .hero h1 {
+        font-size: clamp(2.5rem, 2.7vw, 3.2rem);
+        margin: 5rem auto 3rem auto;
+    }
+
+    /* === section FLATRATE PRICE */
+    .flatrate_price {
+        width: 90%;
+        margin: 10rem auto 10rem auto;
+    }
+
+    .flatrate_price p:nth-child(2) {
+        width: 28%;
+        margin-left: 4rem;
+    }
+
+    /* === section DELIVERABLES === */
+    .deliverables article h3 {
+        font-size: clamp(1.8rem, 1.7vw, 2rem);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .deliverables article p {
+        font-size: clamp(1.8rem, 1.6vw, 2rem); 
+    }
+
+    /* === section HOW IT WORKS / WHO WE ARE === */
+    .howItWorks_whoWeAre {
+        margin: 8rem auto 8rem auto;
+        padding-left: 1rem;
+    }
+
+    .howItWorks_whoWeAre article {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .howItWorks_whoWeAre article ol,
+    .howItWorks_whoWeAre article p {
+        line-height: 1.2;
+    }
+
+    /* === section CRITIQUE === */
+    .critique {
+        padding-bottom: 10rem;
+    }
+
+    .critique > p:nth-child(2) {
+        width: 90%;
+        margin: 2rem auto 9rem auto;
+    }
+
+    .flexcontainer_img_position img:first-of-type {
+        width: 120%;
+        transform: translateX(-70px);
+    }
+
+    .critique .flexcontainer_img_position p {
+        width: 60%;
+        margin-left: 10rem;
+    }
+
+    .flexcontainer_img_position img:last-of-type {
+        top: 45%;
+        right: -3rem;
+    }
+
+    /*  ===== FOOTER ===== */
+    footer h2 {
+        margin-bottom: 0;
+    }
+
+    footer .flexcontainer_img_n_link p {
+        font-size: clamp(1.4rem, 1.4vw, 1.7rem);
+    }
+}
+
+
+/* === SMALL SCREENS 🤭 -TBC- when time allows ===*/
+@media only screen and (max-width: 899px) {
+
+    body {
+        display: none;
+    }
+}
+
+
+
